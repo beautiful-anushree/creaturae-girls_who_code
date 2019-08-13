@@ -1,0 +1,49 @@
+m<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="creaturae.css">
+    <script src="creaturae.js" type="text/javascript"></script>
+    <link rel="icon" href="cresmalllogo.png">
+    <title>creaturae</title>
+  </head>
+  <body>
+    <div class= "navbar">
+      <h2>
+        <a href="home.html">home</a>
+       <a href="allstory.html">full story generator</a>
+       <a href="character.html">character generator</a>
+       <a class="active" href="prompts.html">writing prompt generator</a>
+       <a href="keyword.html">keyword generator</a>
+   </h2>
+  </div>
+  <div class="main">
+    <h1>creaturae<img class="b" src="theone.png" align="middle" width="178" height="129"></h1>
+  </div>
+  <hr>
+
+  <div class="center">
+  <!--getRandomKeywords Button and Generator-->
+  <button class="block" onclick="document.getElementById('mystery').innerHTML = getRandomMystery()"><h2>click here for a mystery prompt</h2></button>
+  <p class="p222" id="mystery"></p>
+  <script type="text/javascript">
+
+     var mystery = ['You wake up in a forest, with no recollection of how you got there.','Your main character realizes that they were accidentally swapped at birth and sets out on a journey to find their real birth-mother.','Your main character wakes up inside of a maze and has 24 hours to escape.','One day at work, your main character notices an expo marker pick itself up and start drawing a strange map on the board. Where does it lead to?','Your main character is about to go to bed when they hear creepy chant-like whispering coming from their closet.','Your main character realizes the skeleton in their biology class is alive.','The coffee of the local coffee shop seems to have been poisoned. So far, three people have died. Who is behind all of this?','Your main character lives near a railroad track that was closed down decades ago, yet they still hear a train go by every night.'];
+     function getRandomMystery() {
+       var i;
+       for (i=0; i<1; i++){
+         var temp = mystery[Math.floor(Math.random() * mystery.length)];
+       }
+       return temp;
+     }
+
+   </script>
+ </div>
+   <hr>
+   <p>© esha thorat<br>
+     © jaslyn ponder<br>
+ © anushree sengupta</p>
+
+  </body>
+</html>

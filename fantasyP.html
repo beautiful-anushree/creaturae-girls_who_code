@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="creaturae.css">
+    <script src="creaturae.js" type="text/javascript"></script>
+    <link rel="icon" href="cresmalllogo.png">
+    <title>creaturae</title>
+  </head>
+  <body>
+    <div class= "navbar">
+      <h2>
+        <a href="home.html">home</a>
+       <a href="allstory.html">full story generator</a>
+       <a href="character.html">character generator</a>
+       <a class="active" href="prompts.html">writing prompt generator</a>
+       <a href="keyword.html">keyword generator</a>
+   </h2>
+  </div>
+  <div class="main">
+    <h1>creaturae<img class="b" src="theone.png" align="middle" width="178" height="129"></h1>
+  </div>
+  <hr>
+  <div class="center">
+  <!--getRandomKeywords Button and Generator-->
+ <button class="block" onclick="document.getElementById('fantasy').innerHTML = getRandomFantasy()"><h2>click here for a fantasy prompt</h2></button>
+ <p class="p222" id="fantasy"></p>
+ <script type="text/javascript">
+
+     var fantasy = ['Your main character hates fairy tales, but one day, they wake up and realize they are inside of one and they must embark on a magical journey in order to get back home.','Your main character passes out and wakes up in a forest filled with mythical creatures of all sorts.','Your main character has a secret: they can transform themselves into a dragon.'];
+     function getRandomFantasy() {
+       var i;
+       for (i=0; i<1; i++){
+         var temp = fantasy[Math.floor(Math.random() * fantasy.length)];
+       }
+       return temp;
+     }
+
+   </script>
+   </div>
+   <hr>
+   <p>© esha thorat<br>
+     © jaslyn ponder<br>
+ © anushree sengupta</p>
+  </body>
+</html>

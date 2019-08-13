@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="creaturae.css">
+    <script src="creaturae.js" type="text/javascript"></script>
+    <link rel="icon" href="cresmalllogo.png">
+    <title>creaturae</title>
+  </head>
+  <body>
+    <div class= "navbar">
+      <h2>
+        <a href="home.html">home</a>
+       <a href="allstory.html">full story generator</a>
+       <a href="character.html">character generator</a>
+       <a class="active" href="prompts.html">writing prompt generator</a>
+       <a href="keyword.html">keyword generator</a>
+   </h2>
+  </div>
+  <div class="main">
+    <h1>creaturae<img class="b" src="theone.png" align="middle" width="178" height="129"></h1>
+  </div>
+  <hr>
+  <div class="center">
+  <!--getRandomKeywords Button and Generator-->
+  <button class="block" onclick="document.getElementById('line').innerHTML = getRandomLine()"><h2>click here for a random first line</h2></button>
+  <p class="p222" id="line"></p>
+  <script type="text/javascript">
+
+     var line = ['"I knew I should have bought that pizza!"','"This cat is kind of creepy."','"Is that...Leonardo DiCaprio?"','"Why are you so annoying?"','"Why is this goldfish purple?"','"Has the sun risen already?"','"That sounds like a problem"','"This may seem really weird, but that guy is your brother."','"Get out of my house!"','"Where am I?"','"We are sorry, but you are under arrest for attempted murder."','"Do you love me?"'];
+     function getRandomLine() {
+       var i;
+       for (i=0; i<1; i++){
+         var temp = line[Math.floor(Math.random() * line.length)];
+       }
+       return temp;
+     }
+
+   </script>
+ </div>
+   <hr>
+   <p>© esha thorat<br>
+     © jaslyn ponder<br>
+ © anushree sengupta</p>
+  </body>
+</html>

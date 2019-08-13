@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="creaturae.css">
+    <script src="creaturae.js" type="text/javascript"></script>
+    <link rel="icon" href="cresmalllogo.png">
+    <title>creaturae</title>
+  </head>
+  <body>
+    <div class= "navbar">
+      <h2>
+        <a href="home.html">home</a>
+       <a href="allstory.html">full story generator</a>
+       <a href="character.html">character generator</a>
+       <a class="active" href="prompts.html">writing prompt generator</a>
+       <a href="keyword.html">keyword generator</a>
+   </h2>
+  </div>
+  <div class="main">
+    <h1>creaturae<img class="b" src="theone.png" align="middle" width="178" height="129"></h1>
+  </div>
+  <hr>
+  <div class="center">
+  <!--getRandomKeywords Button and Generator-->
+  <button class="block" onclick="document.getElementById('romance').innerHTML = getRandomRomance()"><h2>click here for a romance prompt</h2></button>
+  <p class="p222" id="romance"></p>
+  <script type="text/javascript">
+
+     var romance = ['Your main character finds a pair of sunglasses in their backpack. When the put them on, they realize that they can see who has a crush on who.','Your main character realizes that they are in love with their best friend.','Your main character is given a love potion. They only have one chance to use it and its effects are irreversible.',"Your main character lives in a world where they can see their soulmate's memories through dreams.",'Your main character has trained their entire life to fight the aliens invading their planet. What happens when they fall in love with one?'];
+     function getRandomRomance() {
+       var i;
+       for (i=0; i<1; i++){
+         var temp = romance[Math.floor(Math.random() * romance.length)];
+       }
+       return temp;
+     }
+
+   </script>
+ </div>
+   <hr>
+   <p>© esha thorat<br>
+     © jaslyn ponder<br>
+ © anushree sengupta</p>
+  </body>
+</html>

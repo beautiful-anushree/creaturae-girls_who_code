@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="creaturae.css">
+    <script src="creaturae.js" type="text/javascript"></script>
+    <link rel="icon" href="cresmalllogo.png">
+    <title>creaturae</title>
+
+    ​
+
+  </head>
+  <body>
+    <div class= "navbar">
+      <h2>
+      <a href="home.html">home</a>
+     <a class="active" href="allstory.html">full story generator</a>
+     <a href="character.html">character generator</a>
+     <a href="prompts.html">writing prompt generator</a>
+     <a href="keyword.html">keyword generator</a>
+   </h2>
+  </div>
+  <div class="main">
+    <h1>creaturae<img class="b" src="theone.png" align="middle" width="178" height="129"></h1>
+  </div>
+  <hr>
+<h2 class="h222"><center>character</center></h2>
+  <table id="table1">
+    <tr>
+      <th>
+  <!--Female Name Button and Generator-->
+  <div >
+  <button class="block" onclick="document.getElementById('nameF').innerHTML = getRandomNameF()"><h2>click here for a female name</h2></button>
+  <p id="nameF"></p>
+  <script>
+  var charnameFEM = ["Addison","Adele","Anabelle","Amelia","Elise","Geneva","Lucy","Margot","Regina","Bailey","Blair","Arden","Aubrey","Casey","Cameron","Dakota","Emerald","Esmeralda","Emery","Evelyn","Dana","Jamie","Jessie","London","Madison","Mackenzie","Marley","Raven","Morgan","Peyton","Robin","Rowan","Sydney","Tracy","Skye","Sloane","Taylor","Teagan","Jordyn","Jude","Ivory","Jaylen","Rose","Imani","Luna","Kelly","Misun","Jihyun","Chaewon","Kennedy","YanLi","ZiNan","JingNan","Meera","Kiran","Priyanka","Natasha","Reisha","Nala","Michelle","Sarah","Fatema","Mariam","Emilia","Harper","Sophia","Charlotte","Helena","Clementine","Maya","Victoria","Samantha","Lisa","Marie","Saanvi","Prisha","Nora","Mina","Nini","Noni","Ava","Emily","Mia","Lucia","Cora","Constanza","Avery","Aria","Yinna","Laura","Ria","Helga","Heli","Misaki","Rowena","Ariel","Maxine","Elenor","Joyce","Cindy","Jasmine","Cheyene","Julie","Olivia","Kendall","Lara","Mary","Maria","Raye","Amy","Georgia","Ariel","Vanessa","Adelaide","Grace","Mariana","Tiffany","Elizabeth","Eunha","Katrina","Lola","Florence","Irene","Wendy","Susan","Karen","Yura","Emma","Yeri","Fiona","Helen","Arabella","Ananya","Ophelia","Juliet","Virginia","Joanna","Zealia","Laasya","Audrey","Paige","Brooke","Maddie","Sofia","Alana","Abigail","Santenara","Molly","Safiya","Jane","Lili","America","Nora","Zoey","Stella","Willow","Ruby","Isla","Jade","Juniper","Paris","Lexi","Hallie","Octavia","Holly","Lilith","Aileen","Liv","Yara","Rebekah","Mercy","Jillian","Rhea"]
+  function getRandomNameF() {
+    var i;
+  var testArray = []
+  for (i=0; i<1; i++){
+    var temp = charnameFEM[Math.floor(Math.random() * charnameFEM.length)];
+    testArray.push(temp);
+    testArray.push("<br>");
+  }
+  var myString = testArray.toString();
+  var finalString = myString.replace(/,/g, " ");
+
+  return finalString;
+  }
+
+  </script>
+  </div>
+  </th>
+  <th>
+  <div>
+  <!--Male Name Button and Generator-->
+  <button class="block" onclick="document.getElementById('nameM').innerHTML = getRandomNameM()"><h2>click here for a male name</h2></button>
+  <p id="nameM"></p>
+  <script>
+  var charnameMAL = ["Adrian","Alex","August","Devin","Drew","Blaine","Brett","Elliott","Bryan","Cameron","Dallas","Finley","Gray","Hayden","Charlie","Kai","Quinn","Reese","Rory","Tate","Tyler","Wyatt","Josh","Kennedy","Jackson","Michael","Jordan","Raphael","Kaden","Tristan","Theodore","Ricardo","Julian","Lincoln","Louis","Hinata","Akira","Tadashi","Jungho","Minhyuck","Hanbin","ZiQian","YuXuan","WuXian","Kyle","Sanjay","Sandeep","Krish","Aryan","Rahul","Charles","Arjun","Cedric","Clint","Khalid","Adam","Ali","Omar","Bruno","Francisco","Lorenzo","Valentino","Leo","Henry","Matthew","Miguel","Gabriel","Noah","Santiago","Lucas","Matias","Emmanuel","Liam","Issac","Samuel","Felix","Diego","Emiliano","Mateo","Leonardo","Sebastian","Hugo","Enzo","Oscar","Nathan","Luca","Nathaniel","Isak","Grant","Griffin","Simon","Anirban","Magnus","Ren","Mario","Mason","Dustin","William","George","Blake","Bill","Titus","Jaxon","Joel","Emerson","Apollo","Stephan","Gavin","Rocco","Landon","Evan","Austin","Xavier","Braxton","Zane","Atticus","Dexter","Aiden","Royce","Luis","Rafael","Fernando","Oliver","Jesus","Logan","Grayson","Ethan","James","Caleb","Joe","Archie","Everett","Jasper","Bennett","Ashton","Cole","Maxwell","Giovanni","Carlos","Antonio","Keith","Dean","Richard","Steven","Peter","Robert","Chris","Mark","John","Daniel","Knox","Cade","Tanner","Emilio","Walker","Walter","Simon","Killian","Atlas","Erik","Orion","Travis","Jacob","Prince","Kane","Warren","Ishmael","Rory","Andy","Lawson","Frank","Harvey"];
+  function getRandomNameM() {
+    var i;
+  var testArray = []
+  for (i=0; i<1; i++){
+    var temp = charnameMAL[Math.floor(Math.random() * charnameMAL.length)];
+    testArray.push(temp);
+    testArray.push("<br>");
+  }
+  var myString = testArray.toString();
+  var finalString = myString.replace(/,/g, " ");
+
+  return finalString;
+  }
+  </script>
+  </div>
+  </th>
+  <th>
+  <div class="center">
+  <!--Age Button and Generator-->
+  <button class="block" onclick="document.getElementById('age').innerHTML = getRandomAge()"><h2>click here for an age range</h2></button>
+  <p id="age"></p>
+  <script>
+  var ages = ["0-5", "6-10", "11-15", "16-20", "21-25", "26-30", "31-35", "36-40", "41-45", "46-50", "51-55", "56-60", "61-65", "66-70", "71-75", "76-80", "81-85", "86-90", "91-95",
+  "96-101+"];
+  function getRandomAge() {
+  return ages[Math.floor(Math.random() * ages.length)];
+  }
+  </script>
+</div>
+</th>
+  </tr>
+  </table>
+  <hr>
+
+<h2 class="h222"><center>plot</center></h2>
+<div class="center">
+<!--getRandomKeywords Button and Generator-->
+<button class="block" onclick="document.getElementById('plot').innerHTML = getRandomPlot()"><h2>click here for a plot</h2></button>
+<p id="plot"></p>
+ <script>
+ var plot = ['Your main character wakes up in a forest, with no recollection of how they got there.','Your main character realizes that they were accidentally swapped at birth and sets out on a journey to find their birth-mother.','Your main character wakes up inside of a maze and has 24 hours to escape.','Your main character hates fairy tales, but one day, they wake up and realize they are inside of one and they must embark on a magical journey in order to get back home.','Your main character wakes up and realizes that they are a computer and they must code themselves out of the system.','One day at work, your main character notices an expo marker pick itself up and start drawing a strange map on the board. Where does it lead to?','Your main character hates fairy tales, but one day, they wake up and realize they are inside of one and they must embark on a magical journey in order to get back home.','Your main character passes out and wakes up in a forest filled with mythical creatures of all sorts.','Your main character has a secret: they can transform themselves into a dragon.','Your main character is about to go to bed when they hear creepy chant-like whispering coming from their closet.','Your main character realizes the skeleton in their biology class is alive.','The coffee of the local coffee shop seems to have been poisoned. So far, three people have died. Who is behind all of this?','Your main character lives near a railroad track that was closed down decades ago, yet they still hear a train go by every night.','Your main character finds a pair of sunglasses in their backpack. When the put them on, they realize that they can see who has a crush on who.','Your main character realizes that they are in love with their best friend.','Your main character is given a love potion. They only have one chance to use it and its effects are irreversible.',"Your main character lives in a world where they can see their soulmate's memories through dreams.",'Your main character has trained their entire life to fight the aliens invading their planet. What happens when they fall in love with one?','Your main character learns that they are actually a cyborg.',];
+ function getRandomPlot() {
+   var i;
+   for (i=0; i<1; i++){
+     var temp = plot[Math.floor(Math.random() * plot.length)];
+   }
+
+   return temp;
+ }
+ </script>
+</div>
+
+<div class="center">
+
+
+</script>
+<!--Number of Plot Twists Generator-->
+<button class="block" onclick="document.getElementById('plots').innerHTML = getRandomPlotNumber()"><h2>click here for a plot twist</h2></button>
+<p id="plots"></p>
+<script>
+var plotNum = [
+  "Your main character finds out that they're adopted.","Your main character's significant other dumps them.","Your main character's phone breaks.","Your main character's pet dies.","Your main character wins the lottery!","Your main character gets fired from their job.","Your main character gets expelled from school.","Your main character finds out that their grandma is a witch.","Your main character fails their final exam.","Your main character meets the head of their country.","Your main character's family suddenly dies.","Your main character's plane crashes.","Your main character wins a trip to Mars.","Your main character goes into a coma due to a car accident.","Your main character's phone gets stolen.","Your main character finds out that they have royal blood."
+];
+function getRandomPlotNumber() {
+ return plotNum[Math.floor(Math.random() * plotNum.length)];
+}
+</script>
+</div>
+
+
+<hr>
+<p>© esha thorat<br>
+  © jaslyn ponder<br>
+© anushree sengupta</p>
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="creaturae.css">
+    <script src="creaturae.js" type="text/javascript"></script>
+    <link rel="icon" href="cresmalllogo.png">
+    <title>creaturae</title>
+  </head>
+  <body>
+    <div class= "navbar">
+      <h2>
+      <a href="home.html">home</a>
+     <a href="allstory.html">full story generator</a>
+     <a class="active" href="character.html">character generator</a>
+     <a href="prompts.html">writing prompt generator</a>
+     <a href="keyword.html">keyword generator</a>
+   </h2>
+  </div>
+  <div class="main">
+    <h1>creaturae<img class="b" src="theone.png" align="middle" width="178" height="129"></h1>
+  </div>
+  <hr>
+  <table id="table1">
+    <tr>
+      <th>
+  <!--Female Name Button and Generator-->
+  <div>
+  <button class="block" onclick="document.getElementById('nameF').innerHTML = getRandomNameF()"><h2>click here for female names</h2></button>
+  <p class="p222" id="nameF"></p>
+  <script>
+  var charnameFEM = ["Addison","Adele","Anabelle","Amelia","Elise","Geneva","Lucy","Margot","Regina","Bailey","Blair","Arden","Aubrey","Casey","Cameron","Dakota","Emerald","Esmeralda","Emery","Evelyn","Dana","Jamie","Jessie","London","Madison","Mackenzie","Marley","Raven","Morgan","Peyton","Robin","Rowan","Sydney","Tracy","Skye","Sloane","Taylor","Teagan","Jordyn","Jude","Ivory","Jaylen","Rose","Imani","Luna","Kelly","Misun","Jihyun","Chaewon","Kennedy","YanLi","ZiNan","JingNan","Meera","Kiran","Priyanka","Natasha","Reisha","Nala","Michelle","Sarah","Fatema","Mariam","Emilia","Harper","Sophia","Charlotte","Helena","Clementine","Maya","Victoria","Samantha","Lisa","Marie","Saanvi","Prisha","Nora","Mina","Nini","Noni","Ava","Emily","Mia","Lucia","Cora","Constanza","Avery","Aria","Yinna","Laura","Ria","Helga","Heli","Misaki","Rowena","Ariel","Maxine","Elenor","Joyce","Cindy","Jasmine","Cheyene","Julie","Olivia","Kendall","Lara","Mary","Maria","Raye","Amy","Georgia","Ariel","Vanessa","Adelaide","Grace","Mariana","Tiffany","Elizabeth","Eunha","Katrina","Lola","Florence","Irene","Wendy","Susan","Karen","Yura","Emma","Yeri","Fiona","Helen","Arabella","Ananya","Ophelia","Juliet","Virginia","Joanna","Zealia","Laasya","Audrey","Paige","Brooke","Maddie","Sofia","Alana","Abigail","Santenara","Molly","Safiya","Jane","Lili","America","Nora","Zoey","Stella","Willow","Ruby","Isla","Jade","Juniper","Paris","Lexi","Hallie","Octavia","Holly","Lilith","Aileen","Liv","Yara","Rebekah","Mercy","Jillian","Rhea"]
+  function getRandomNameF() {
+    var i;
+  var testArray = []
+  for (i=0; i<5; i++){
+    var temp = charnameFEM[Math.floor(Math.random() * charnameFEM.length)];
+    testArray.push(temp);
+    testArray.push("<br>");
+  }
+  var myString = testArray.toString();
+  var finalString = myString.replace(/,/g, " ");
+
+  return finalString;
+}
+
+  </script>
+  </div>
+</th>
+  <th>
+  <div>
+  <!--Male Name Button and Generator-->
+  <button class="block" onclick="document.getElementById('nameM').innerHTML = getRandomNameM()"><h2>click here for male names</h2></button>
+  <p class="p222" id="nameM"></p>
+  <script>
+  var charnameMAL = ["Adrian","Alex","August","Devin","Drew","Blaine","Brett","Elliott","Bryan","Cameron","Dallas","Finley","Gray","Hayden","Charlie","Kai","Quinn","Reese","Rory","Tate","Tyler","Wyatt","Josh","Kennedy","Jackson","Michael","Jordan","Raphael","Kaden","Tristan","Theodore","Ricardo","Julian","Lincoln","Louis","Hinata","Akira","Tadashi","Jungho","Minhyuck","Hanbin","ZiQian","YuXuan","WuXian","Kyle","Sanjay","Sandeep","Krish","Aryan","Rahul","Charles","Arjun","Cedric","Clint","Khalid","Adam","Ali","Omar","Bruno","Francisco","Lorenzo","Valentino","Leo","Henry","Matthew","Miguel","Gabriel","Noah","Santiago","Lucas","Matias","Emmanuel","Liam","Issac","Samuel","Felix","Diego","Emiliano","Mateo","Leonardo","Sebastian","Hugo","Enzo","Oscar","Nathan","Luca","Nathaniel","Isak","Grant","Griffin","Simon","Anirban","Magnus","Ren","Mario","Mason","Dustin","William","George","Blake","Bill","Titus","Jaxon","Joel","Emerson","Apollo","Stephan","Gavin","Rocco","Landon","Evan","Austin","Xavier","Braxton","Zane","Atticus","Dexter","Aiden","Royce","Luis","Rafael","Fernando","Oliver","Jesus","Logan","Grayson","Ethan","James","Caleb","Joe","Archie","Everett","Jasper","Bennett","Ashton","Cole","Maxwell","Giovanni","Carlos","Antonio","Keith","Dean","Richard","Steven","Peter","Robert","Chris","Mark","John","Daniel","Knox","Cade","Tanner","Emilio","Walker","Walter","Simon","Killian","Atlas","Erik","Orion","Travis","Jacob","Prince","Kane","Warren","Ishmael","Rory","Andy","Lawson","Frank","Harvey"];
+  function getRandomNameM() {
+    var i;
+  var testArray = []
+  for (i=0; i<5; i++){
+    var temp = charnameMAL[Math.floor(Math.random() * charnameMAL.length)];
+    testArray.push(temp);
+    testArray.push("<br>");
+  }
+  var myString = testArray.toString();
+  var finalString = myString.replace(/,/g, " ");
+
+  return finalString;
+}
+  </script>
+</div>
+</th>
+</tr>
+  </table>
+  <hr>
+  <div class="center">
+  <!--Age Button and Generator-->
+  <button class="block" onclick="document.getElementById('age').innerHTML = getRandomAge()"><h2>click here for an age range</h2></button>
+  <p class="p222"id="age"></p>
+  <script>
+  var ages = ["0-5", "6-10", "11-15", "16-20", "21-25", "26-30", "31-35", "36-40", "41-45", "46-50", "51-55", "56-60", "61-65", "66-70", "71-75", "76-80", "81-85", "86-90", "91-95",
+  "96-101+"];
+  function getRandomAge() {
+  return ages[Math.floor(Math.random() * ages.length)];
+  }
+  </script>
+</div>
+  <hr>
+  <!--Characteristics Button and Generator-->
+<div class="center">
+  <button class="block" onclick="document.getElementById('characteristic').innerHTML = getRandomCharacteristic()"><h2>click here for characteristics</h2></button>
+  <p class="p222" id="characteristic"></p>
+  <script>
+  var characteristics = ["Adaptable", 'Admirable', 'Adventurous', 'Alert', 'Anticipative', 'Grateful', 'Benevolent', 'Calm', 'Charming', 'Cheerful', 'Clear-headed', 'Clever', 'Colorful', 'Compassionate', 'Confident', 'Considerate', 'Courageous', 'Courteous', 'Creative',
+   'Cultured', 'Curious', 'Daring', 'Dedicated', 'Deep', 'Dignified', 'Disciplined', 'Discreet', 'Dramatic', 'Dutiful', 'Earnest', 'Educated', 'Efficient', 'Elegant', 'Empathetic', 'Energetic', 'Enthusiastic', 'Esthetic', 'Exciting', 'Extraordinary',
+    'Fair', 'Faithful', 'Farsighted', 'Focused', 'Forgiving', 'Fun-loving', 'Gallant', 'Generous', 'Gentle', 'Genuine', 'Good-natured', "Gracious", "Grateful", "Hardworking", "Hearty", "Helpful", "Heroic", "High-minded", "Honest", "Honorable",
+    "Humble", "Humorous", "Idealistic", "Imaginative", "Independent", "Individualistic", "Innovative", "Innocent", "Insightful", "Intelligent", "Kind", "Knowledgeable", "Leader", "Lovable", "Loyal", "Lyrical", "Magnanimous", "Mature", "Methodical", "Meticulous",
+    "Moderate", "Modest", "Observant", "Optimistic", "Organized", "Painstaking", "Passionate", "Patient", "Patriotic", "Peaceful", "Perceptive", "Perfectionist", "Personable", "Persuasive", "Playful", "Popular", "Principled", "Protective", "Rational", "Realistic",
+     "Reflective", "Relaxed", "Reliable", "Resourceful", "Respectful", "Responsible", "Romantic", "Rustic", "Sane", "Scholarly", "Selfless", "Sensitive", "Sentimental", "Serious", "Simple", "Skillful", "Sociable", "Sophisticated", "Strong", "Studious",
+      "Subtle", "Sweet", "Sympathetic", "Systematic", "Tasteful", "Teacherly", "Tidy", "Tolerant", "Trusting", "Well-read", "Wise", "Witty", "Youthful", "Aggressive", "Ambitious", "Amusing", "Artful", "Ascetic", "Authoritarian", "Boyish",
+      "Breezy", "Busy", "Casual", "Competitive", "Cute", "Deceptive", "Determined", "Dominating", "Dreamy", "Emotional", "Folksy", "Formal", "Glamorous", "Guileless", "High-spirited", "Hurried", "Hypnotic", "Impassive", "Impersonal", "Impressionable",
+      "Maternal", "Mellow", "Modern", "Moralistic", "Mystical", "Neutral", "Noncommittal", "Noncompetitive", "Obedient", "Old-fashioned", "Ordinary", "Outspoken", "Physical", "Placid", "Political", "Predictable", "Preoccupied", "Private", "Progressive", "Proud",
+      "Pure", "Questioning", "Quiet", "Religious", "Reserved", "Restrained", "Retiring", "Sarcastic", "Self-conscious", "Sensual", "Skeptical", "Smooth", "Soft", "Solemn", "Solitary", "Stern", "Strict", "Stubborn", "Stylish", "Subjective",
+       "Surprising", "Soft", "Tough", "Unaggressive", "Unambitious", "Unceremonious", "Unchanging", "Undemanding", "Unfathomable", "Unhurried", "Uninhibited", "Unpatriotic", "Unpredictable", "Unsentimental", "Whimsical", "Agonizing", "Aggressive", "Aloof", "Amoral", "Anxious",
+        "Apathetic", "Arrogant", "Blunt", "Brutal", "Difficult", "Disrespectful", "Disruptive", "Distractible", "Disturbing", "Dogmatic", "Dull", "Envious", "Extravagant", "Faithless", "False", "Fanciful", "Fearful", "Flamboyant", "Foolish", "Forgetful",
+        "Fraudulent", "Frightening", "Gloomy", "Graceless", "Greedy", "Grim", "Gullible", "Hateful", "Haughty", "Hesitant", "Hostile", "Hot", "Ignorant", "Impatient", "Impractical", "Impulsive", "Inconsiderate", "Indecisive", "Indulgent", "Insecure",
+        "Insensitive", "Insincere", "Insulted" , "Intolerant", "Irrational", "Irresponsible", "Irritable", "Lazy", "Malicious", "Mannerless", "Melancholic", "Messy", "Miserable", "Misguided", "Moody", "Morbid", "Naive", "Narcissistic", "Negative", "Neglectful",
+        "Obnoxious", "Obsessive", "Obvious", "Opinionated", "Opportunistic", "Oppressed", "Outrageous", "Paranoid", "Passive", "Petty", "Pompous", "Possessive", "Power-hungry", "Predatory", "Prejudiced", "Presumptuous", "Pretentious", "Procrastinator", "Provocative", "Quirky",
+        "Regretful", "Resentful", "Ridiculous", "Rigid", "Ritualistic", "Ruined", "Sanctimonious", "Scheming", "Scornful", "Secretive", "Selfish", "Shallow", "Shortsighted", "Sloppy", "Slow", "Sly", "Small-thinking", "Soft Headed", "Sordid", "Stupid",
+        "Submissive", "Superficial", "Superstitious", "Suspicious", "Tasteless", "Tense", "Thievish", "Thoughtless", "Timid", "Transparent", "Treacherous", "Troublesome", "Unappreciative", "Undisciplined", "Unfriendly", "Ungrateful", "Unhealthy", "Unimaginative", "Unlovable", "Unprincipled",
+        "Unrealistic", "Unreliable", "Unstable", "Vague", "Venomous", "Vulnerable", "Weak", "Willful", "Careless", "Childish", "Clumsy", "Cold", "Colorless", "Compulsive", "Conventional", "Coward", "Crazy", "Critical", "Cruel", "Deceitful",
+         "Delicate", "Demanding", "Dependent", "Desperate", "Destructive", "Devious"];
+  function getRandomCharacteristic() {
+    var i;
+  var testArray = []
+  for (i=0; i<3; i++){
+    var temp = characteristics[Math.floor(Math.random() * characteristics.length)];
+    testArray.push(temp);
+    testArray.push("<br>");
+  }
+  var myString = testArray.toString();
+  var finalString = myString.replace(/,/g, " ");
+
+  return finalString;
+}
+  </script>
+</div>
+  <hr>
+  <p>© esha thorat<br>
+    © jaslyn ponder<br>
+© anushree sengupta</p>
+  </body>
+</html>

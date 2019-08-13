@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Montserrat|Unica+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="creaturae.css">
+    <script src="creaturae.js" type="text/javascript"></script>
+    <link rel="icon" href="cresmalllogo.png">
+    <title>creaturae</title>
+  </head>
+  <body>
+    <div class= "navbar">
+      <h2>
+      <a href="home.html">home</a>
+     <a href="allstory.html">full story generator</a>
+     <a href="character.html">character generator</a>
+     <a href="prompts.html">writing prompt generator</a>
+     <a class="active" href="keyword.html">keyword generator</a>
+   </h2>
+  </div>
+  <div class="main">
+    <h1>creaturae<img class="b" src="theone.png" align="middle" width="178" height="129"></h1>
+  </div>
+  <hr>
+  <div class="center">
+  <!--getRandomKeywords Button and Generator-->
+ <button class="block" onclick="document.getElementById('keyword').innerHTML = getRandomKeyword()"><h2>click here for five random words</h2></button>
+ <p class="p222" id="keyword"></p>
+   <script>
+   var keywords = ['Adult','Airport','Album','Apple','Baby','Balloon','Banana','Bank','Barbecue','Bathroom','Bed','Bee','Bible','Bird','Book','Bottle','Bridge','Butterfly','Button','Car','Carrot','Cave',
+   'Chess','Board','Child','Chocolate','Church','Circus','Clock','Clown','Coffee','Comet','Compass','Computer','Crystal','Diamond','Drink','Drum','Earth','Electricity','Eyes','Family','Festival','Fire','Fork','Fruit','Game',
+   'Garden','Gemstone','Grapes','Guitar','Hammer','Ice','Insect','Knife','Library','Liquid','Magnet','Map','Maze','Meteor','Milk','Money','Nail','Needle','Onion','Passport','Pepper','Perfume','Pillow','Potato','Printer',
+   'Prison','Pyramid','Radar','Rainbow','Restaurant','Robot','Satellite','School','Shoes','Signature','Skeleton','Space','Shuttle','Spectrum','Spice','Spiral','Spoon','Staircase','Star','Sun','Sword','Teeth','Television','Tiger','Torch',
+   'Train','Triangle','Vampire','Vulture','Wheelchair','Window','X-ray','Acid','Venom','Zebra','Popcorn','Pizza','Lion','Ostrich','Ghost','Chili','Pumpkin','Tree','Freedom','Liberty','Egg','Titan','Sunflower','Eyeliner','Lipstick',
+   'Jacket','Balloon','Baseball','Basketball','Mouse','Wallet','Wizard','Rose','Tulip','Technology','Warrior','Police','Doctor','Japan','China','Korea','Germany','England','Scotland','Ireland','Canada','USA','Italy','France','Spain',
+   'Portugal','Brazil','Colombia','Venezuela','Ecuador','Poland','Switzerland','Norway','Sweden','Thailand','Australia','Nigeria', 'Kenya','Egypt','Ethiopia','Sandwich','Flower','Headphones','Camera','Cats','Dogs','Fish','Toad'];
+   function getRandomKeyword() {
+     var i;
+     var testArray = []
+     for (i=0; i<5; i++){
+       var temp = keywords[Math.floor(Math.random() * keywords.length)];
+       testArray.push(temp);
+       testArray.push("<br>");
+     }
+     var myString = testArray.toString();
+     var finalString = myString.replace(/,/g, " ");
+
+     return finalString;
+   }
+   </script>
+</div>
+<hr>
+<h2 class="h222"><center>create a story using these five words</center></h2>
+
+  <hr>
+  <p>© esha thorat<br>
+    © jaslyn ponder<br>
+© anushree sengupta</p>
+  </body>
+</html>
